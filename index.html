@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Studentu registracijos forma</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Registration Form</h1>
+            <p>Fill out the form carefully for registration</p>
+        </header>
+        <main>
+            <div><p>Student Name</p></div>
+            <div class="studentName">
+                <div class="studentnameItem">
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">First name</label>
+                </div>
+                <div class="studentnameItem">
+                    <input type="text" id="mname" name="mname">
+                    <label for="mname">Middle name</label>
+                </div>
+                <div class="studentnameItem">
+                    <input type="text" id="lname" name="lname">
+                    <label for="lname">Last name</label>
+                </div>
+            </div>
+            <div class="day-gender">
+                <div class="birth">
+                    <div><p>Birth Date</p></div>
+                    <div style="display: inline-block; width:40px">
+                    <select id="month">
+                        <option value="0"></option>
+                        <option value="1">Sausis</option>
+                        <option value="2">Vasaris</option>
+                        <option value="3">Kovas</option>
+                      </select>
+                    <label style="display: block;" for="month">Month</label>
+                    </div>
+                    <div style="display: inline-block; width:40px">
+                    <select id="day">
+                        <option value="0"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    <label for="day">Day</label>
+                    </div>
+                    <div style="display: inline-block; width:40px">
+                    <select id="year">
+                        <option value="0"></option>
+                        <option value="1">2020</option>
+                        <option value="2">2021</option>
+                        <option value="3">2022</option>
+                      </select>
+                    <label for="year">Year</label>
+                    </div>
+                </div>
+                <div class="gender">
+                    <div><p>Gender</p></div>
+                      <select style="width: 100%" name="box">
+                        <option value=""disabled selected hidden>Please Select</option>
+                        <option value="option1"> Male </option>
+                        <option value="option1"> Female </option>
+                        <option value="option1"> Prefer not say </option>
+                      </select>
+                </div>
+            </div>
+            <div class="address">
+                <div><p>Address</p></div>
+                <div class="addressItem">
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">State Address</label>
+                </div>
+                <div class="addressItem">
+                    <input type="text" id="mname" name="mname">
+                    <label for="mname">State Address Line 2</label>
+                </div>
+                <div class="addressItem city-state">
+                    <input type="text" id="lname" name="lname">
+                    <label for="lname">City</label>
+                </div>
+                <div class="addressItem city-state state" >
+                    <input type="text" id="lname" name="lname">
+                    <label for="lname">State/Province</label>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <button type="button">Register</button> 
+        </footer>
+
+    </div>
+</body>
+
+</html>
+
